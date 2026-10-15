@@ -15,7 +15,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 PASTA = Path(__file__).resolve().parent
 
-ORIGEM = "db"  # "db" ou "csv"
+ORIGEM = "db" 
 
 BANCO = PASTA / "contatos.db"
 CSV = PASTA / "contatos.csv"
@@ -138,8 +138,6 @@ def preparar_registro(conn):
 
 
 def reservar_contato(conn, telefone):
-    # Só repete falhas anteriores ao envio desta versão.
-    # Os registros antigos ficam preservados.
     cursor = conn.execute("""
         INSERT INTO envios (campanha, telefone, status)
         VALUES (?, ?, 'em_processamento')
