@@ -1,0 +1,17 @@
+# Bancos de dados e arquivos auxiliares
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Contatos exportados
+*.csv
+
+# Perfis do navegador — contêm o login do WhatsApp
+edge_whatsapp/
+perfil_whatsapp/
+chrome_whatsapp/
+__pycache__/
+*.py[cod]
