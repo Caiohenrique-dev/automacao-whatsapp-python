@@ -13,7 +13,7 @@ BANCO = BASE / "contatos.db"
 CSV_SAIDA = BASE / "contatos.csv"
 PERFIL = BASE / "edge_whatsapp"
 
-# Telefones com 10 a 15 digitos.
+
 PADRAO_TELEFONE = re.compile(
     r"(?<!\d)\+?\d(?:[\s().-]*\d){9,14}(?!\d)"
 )
@@ -215,7 +215,7 @@ def selecionar_lista(driver):
         )
         return False
 
-    # Aguarda a lista renderizar após voltar ao início.
+ 
     time.sleep(1)
 
     print("Lista identificada automaticamente!")
